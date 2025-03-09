@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calcul de la Diffusion</title>
+    </head>
+    <body style="background-image: url('/static/background1.png');background-position: center;background-repeat: no-repeat;background-size: cover;height: 87vh;width: 84vh;">
+        <h1 style="position: relative;top: 180px;left: 450px;">Calcul de la Diffusion</h1>
+        <form method="POST">
+            <label for="Xa"style="position: relative;top: 220px;left: 450px;">Xa (entre 0 et 1) :</label>
+            <input type="text" name="Xa" required style="position: relative;top: 220px;left: 500px;"><br><br>
+            <label for="T"style="position: relative;top: 240px;left: 450px;">Température (K) :</label>
+            <input type="text" name="T" required style="position: relative;top: 240px;left: 500px;"><br><br>
+            <button type="submit"style="position: relative;top: 260px;left: 450px;">Calculer</button>
+            {{ result | safe }}
+        </form>
+        <br>
+    </body>
+</html>
